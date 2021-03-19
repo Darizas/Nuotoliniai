@@ -2,3 +2,25 @@ body {
     background-color: burlywood;
 }
 
+.decor {
+    text-decoration: initial;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.shadow {
+    text-shadow: 10px 5px 1px blue;
+}
+
+.ident {
+    text-indent: 50px;
+}
+
+.wspace {
+    word-spacing: 10px;
+}
+
+.example {
+    border: 1px solid red;
+    line-height: 30px;
+    padding: 10px;
+}
