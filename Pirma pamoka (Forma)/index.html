@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+    <h1>Forma Nr. 22-56-89</h1>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <div>
+            <p>Vardas</p>
+            <input type="text" tabindex="1" value="Vardas">
+        </div>
+        <div>
+            <p>Slaptažodis</p>
+            <input type="password" tabindex="6">
+        </div>
+        <div>
+            <p>Tel.nr</p>
+            <input type="number" tabindex="2">
+        </div>
+        <div>
+            <p>Lytis</p>
+            <div>
+                <input checked type="radio" tabindex="7" name="gender" value="male">Vyr.
+            </div>
+            <div>
+                <input type="radio" tabindex="11" name="gender" value="female">Mot.
+            </div>
+        </div>
+        <div>
+            <p>Transportas</p>
+            <div>
+                <input tabindex="3" checked type="checkbox" name="transport" value="bicycle">Dviratis
+            </div>
+            <div>
+                <input tabindex="12" checked type="checkbox" name="transport" value="car">Mašina
+            </div>
+            <div>
+                <input tabindex="13" type="checkbox" name="transport" value="bus">Autobusas
+            </div>
+        </div>
+        <div>
+            <p>Papildoma informacija</p>
+            <div>
+                <textarea name="add_info" tabindex="8" cols="" rows=""></textarea>
+            </div>
+        </div>
+        <div>
+            <p>Pridėti nuotrauką</p>
+            <div>
+                <input type="file" tabindex="4" name="image" accept="image/*">
+            </div>
+        </div>
+        <div>
+            <p>Patinkanti spalva</p>
+            <div>
+                <select name="color" tabindex="9">
+                    <option value="red">Raudona</option>
+                    <option value="green">Žalia</option>
+                    <option selected value="yellow">Geltona</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <p>Veiksmai</p>
+            <div>
+                <button type="submit" tabindex="5">Siųsti</button>
+                <button type="reset" tabindex="11">Išvalyti</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
