@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Form</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=Syne+Tactile&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Forma Nr. <em>22-56-89</em></h1>
+    <div class="allForm">
+    <h1 class="handWriteBold">Forma Nr. <em>22-56-89</em></h1>
     <form action="#" method="POST" enctype="multipart/form-data">
         <div>
             <p>Vardas</p>
-            <input type="text" tabindex="1" value="Vardas">
+            <input class="font" type="text" tabindex="1" value="Vardas">
         </div>
         <div>
             <p>Slaptažodis</p>
@@ -18,45 +22,45 @@
         </div>
         <div>
             <p>Tel.nr</p>
-            <input type="number" tabindex="2">
+            <input class="font" type="number" tabindex="2">
         </div>
         <div>
             <p>Lytis</p>
             <div>
-                <input checked type="radio" tabindex="7" name="gender" value="male">Vyr.
+                <input checked type="radio" tabindex="7" name="gender" value="male"><span class="font">Vyr.</span>
             </div>
             <div>
-                <input type="radio" tabindex="11" name="gender" value="female">Mot.
+                <input type="radio" tabindex="11" name="gender" value="female"><span class="font">Mot.</span>
             </div>
         </div>
         <div>
             <p>Transportas</p>
             <div>
-                <input tabindex="3" checked type="checkbox" name="transport" value="bicycle">Dviratis
+                <input tabindex="3" checked type="checkbox" name="transport" value="bicycle"><span class="font">Dviratis</span>
             </div>
             <div>
-                <input tabindex="12" checked type="checkbox" name="transport" value="car">Mašina
+                <input tabindex="12" checked type="checkbox" name="transport" value="car"><span class="font">Mašina</span>
             </div>
             <div>
-                <input tabindex="13" type="checkbox" name="transport" value="bus">Autobusas
+                <input tabindex="13" type="checkbox" name="transport" value="bus"><span class="font">Autobusas</span>
             </div>
         </div>
         <div>
             <p>Papildoma informacija</p>
             <div>
-                <textarea name="add_info" tabindex="8" cols="" rows=""></textarea>
+                <textarea class="font" name="add_info" tabindex="8" cols="" rows=""></textarea>
             </div>
         </div>
         <div>
             <p>Pridėti nuotrauką</p>
             <div>
-                <input type="file" tabindex="4" name="image" accept="image/*">
+                <input class="font" type="file" tabindex="4" name="image" accept="image/*">
             </div>
         </div>
         <div>
             <p>Patinkanti spalva</p>
             <div>
-                <select name="color" tabindex="9">
+                <select class="font" name="color" tabindex="9">
                     <option value="red">Raudona</option>
                     <option value="green">Žalia</option>
                     <option selected value="yellow">Geltona</option>
@@ -66,10 +70,11 @@
         <div>
             <p>Veiksmai</p>
             <div>
-                <button type="submit" tabindex="5">Siųsti</button>
-                <button type="reset" tabindex="11">Išvalyti</button>
+                <button class="handWrite" type="submit" tabindex="5">Siųsti</button>
+                <button class="handWrite" type="reset" tabindex="11">Išvalyti</button>
             </div>
         </div>
     </form>
+    </div>
 </body>
 </html>
