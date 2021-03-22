@@ -1,0 +1,12 @@
+.wrapper {
+    padding: 10px;
+}
+
+.block {
+
+    border: 1px solid black;
+}
+
+.inline {
+    border: 1px solid red;
+}
