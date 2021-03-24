@@ -1,12 +1,24 @@
-.wrapper {
-    padding: 10px;
-}
-
-.block {
-
+.box {
+    display: inline-block;
+    width: 500px;
+    min-height: 100px;
+    max-height: 300px;
     border: 1px solid black;
+    margin-top: 20px;
+    margin-left: calc((100% - 500px) / 2);
+    position: relative;
 }
 
-.inline {
-    border: 1px solid red;
+.box p::before {
+    position: absolute;
+    content: '*';
+    top: 0;
+    left: -20px;
+}
+
+.box p::after {
+    position: absolute;
+    content: '#';
+    bottom: 0;
+    right: -20px;
 }
