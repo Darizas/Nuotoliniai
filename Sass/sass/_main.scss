@@ -1,0 +1,17 @@
+$color: yellow;
+$font: 6vmin;
+body {
+    width: 100%;
+    height: 100%;
+    background-color: $color;
+    .wrapper {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        .block {
+            font-size: $font;
+            font-family: 'New Tegomin', serif;
+        }
+    }
+}
+
